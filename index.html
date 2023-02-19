@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BaiTap1 MD1-SS2</title>
+    <style>
+        /*SS1*/
+        .ss1 {
+            width: 600px;
+            text-align: center;
+            background-color: aqua;
+            padding: 10px;
+        }
+
+        .ss1 .backgroud {
+            background-color: white;
+            padding: 5px;
+        }
+
+        .ss1 h1 {
+            color: white;
+            background-color: orange;
+            text-align: center;
+            margin: 0;
+        }
+
+        .ss1 form {
+            background-color: white;
+            text-align: center;
+        }
+
+        .ss1 form label {
+            color: blue;
+        }
+
+        .ss1 .lable-name, .lable-email, .lable-last {
+            width: 100px;
+            float: left;
+            text-align: right;
+        }
+
+        .ss1 .name {
+            margin-top: 5px;
+        }
+
+        .ss1 .name input {
+            margin-right: 39%;
+        }
+
+        .ss1 .email {
+            margin: 10px 0;
+        }
+
+        .ss1 .email input {
+            margin-right: 45%;
+        }
+
+        .ss1 .interrest-input {
+            text-align: left;
+            margin-left: 23%;
+        }
+
+        .ss1 .interrest-input input {
+            margin-bottom: 10px;
+        }
+
+        .ss1 .button {
+            text-align: left;
+            margin-left: 23%;
+        }
+
+        /*SS2*/
+        .ss2 {
+            width: 600px;
+            text-align: left;
+            background-color: #e7e73a;
+            padding: 10px;
+        }
+
+        .ss2 h1 {
+            color: blue;
+            background-color: #59b059;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+
+        .ss2 form {
+            color: #4242cc;
+        }
+
+        .ss2 .name input {
+            margin: 0 0 10px 33px;
+        }
+
+        .ss2 .birthday input {
+            margin: 0 0 10px 30px;
+        }
+
+        .ss2 .sex input {
+            margin: 0 0 10px 35px;
+        }
+
+        .ss2 .address {
+            position: relative;
+        }
+
+        .ss2 .address .lable-address {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .ss2 .address input {
+            margin: 0 0 10px 95px;
+            height: 50px;
+        }
+
+        .ss2 .class select {
+            margin: 0 0 10px 65px;
+        }
+
+        .ss2 .lable-email {
+            text-align: left;
+        }
+
+        .ss2 .email input {
+            margin: 0 0 10px -5px;
+        }
+
+        .ss2 .phone input {
+            margin: 0 0 10px 23px;
+        }
+
+        .ss2 .button {
+            margin-left: 93px;
+        }
+    </style>
+</head>
+<body>
+<p>Phần 1</p>
+<section class="ss1">
+    <div class="backgroud">
+        <h1>SỞ THÍCH CỦA BẠN</h1>
+        <form>
+            <div class="name">
+                <label class="lable-name">Họ và tên</label>
+                <input type="text" name="yourname">
+            </div>
+            <div class="email">
+                <label class="lable-email">Email</label>
+                <input type="email" name="email" size="15">
+            </div>
+            <div class="interest">
+                <label class="lable-last">Sở thích</label>
+                <div class="interrest-input">
+                    <input type="checkbox">Thể thao
+
+                    <input type="checkbox">Âm nhạc
+
+                    <input type="checkbox">Đọc sách
+                    <br>
+                    <input type="checkbox">Lướt web
+
+                    <input type="checkbox">Chơi game
+
+                    <input type="checkbox">Điện ảnh
+                    <br>
+                    <input type="checkbox">Du lịch <br>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Gửi thông tin"/>
+                <input type="reset" value="Nhập lại"/>
+            </div>
+        </form>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<p>Phần 2</p>
+<section class="ss2">
+    <div class="backgroud">
+        <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        <form>
+            <div class="name">
+                <label class="lable-name">Họ và tên</label>
+                <input type="text" name="yourname">
+            </div>
+            <div class="birthday">
+                <label class="lable-birthday">Ngày sinh</label>
+                <input type="date" name="birthday" size="15">
+            </div>
+            <div class="sex">
+                <label class="lable-sex">Giới tính</label>
+                <input type="radio" name="sex">Nam
+                <input type="radio" name="sex">Nữ
+            </div>
+            <div class="address">
+                <label class="lable-address">Địa chỉ</label>
+                <input type="text" name="address" size="40">
+            </div>
+            <div class="class">
+                <label class="lable-class">Lớp</label>
+                <select name="class">
+                    <option value="select-class">-Chọn lớp-</option>
+                    <option value="A1">A1</option>
+                    <option value="A2">A2</option>
+                    <option value="A3">A3</option>
+                </select>
+            </div>
+            <div class="email">
+                <label class="lable-email">Email</label>
+                <input type="email" name="email" size="15">
+            </div>
+            <div class="phone">
+                <label class="lable-tel">Điện thoại</label>
+                <input type="tel" name="phone">
+            </div>
+            <div class="button">
+                <input type="submit" value="Đăng ký"/>
+                <input type="reset" value="Nhập lại"/>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
